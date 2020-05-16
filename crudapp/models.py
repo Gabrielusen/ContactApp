@@ -9,3 +9,7 @@ class Contact(models.Model):
     address = models.TextField(blank=True, null=True)
     description = models.TextField(blank=True, null=True)
     created_at = models.DateTimeField('Created At', auto_now_add=True)
+
+    def __str__(self):
+        full_name = f"{self.first_name} + {self.last_name}"
+        return full_name

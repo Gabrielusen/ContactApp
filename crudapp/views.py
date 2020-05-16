@@ -36,7 +36,7 @@ def edit(request, pk, template_name='crudapp/edit.html'):
     return render(request, template_name, {'form': form})
 
 
-def delete(request, pk, template_name='crudapp/delete.html'):
+def delete(request, pk, template_name='crudapp/confirm_delete.html'):
     contact = get_object_or_404(Contact, pk=pk)
     if request.method == 'POST':
         contact.delete()
