@@ -224,3 +224,4 @@ dmypy.json
 .idea/workspace.xml
 venv/
 .idea/vcs.xml
+.idea
