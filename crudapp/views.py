@@ -10,3 +10,6 @@ class IndexView(ListView):
 
     def get_queryset(self):
         return Contact.objects.all()
+
+
+class
