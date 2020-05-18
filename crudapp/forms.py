@@ -1,8 +1,8 @@
 from django.forms import forms
-from .models import Contact
+from .models import Book
 
 
-class ContactForm(forms.Form):
-    class meta:
-        model = Contact
+class BookForm(forms.Form):
+    class Meta:
+        model = Book
         fields = "__all__"
